@@ -1,0 +1,102 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║           ATHLETIC SPIRIT - QUICK START (PowerShell)                           ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+OPTION 1: Using the PowerShell Script (Recommended)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Open PowerShell in the project folder
+2. Run: .\run-app.ps1
+3. If you get an error about script execution, run:
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+4. Then run: .\run-app.ps1
+
+The app will start automatically at http://localhost:5000
+
+
+OPTION 2: Manual PowerShell Commands
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Open PowerShell in the project folder
+2. Install dependencies (first time only):
+   npm install
+
+3. Start the app:
+   npm run dev
+
+4. Open browser to http://localhost:5000
+
+
+PREREQUISITES
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Node.js installed (download from https://nodejs.org/)
+✓ npm (comes with Node.js)
+
+
+WHAT YOU'LL SEE
+═══════════════════════════════════════════════════════════════════════════════
+
+When running, you should see:
+- "rest-express@1.0.0 dev"
+- "NODE_ENV=development tsx server/index.ts"
+- "[express] serving on port 5000"
+
+Then open http://localhost:5000 in your browser.
+
+
+FEATURES TO TEST
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Sign Up
+   - Click "Get Started"
+   - Enter email, username, password
+   - Account created instantly
+
+2. Set Preferences (Optional)
+   - Go to Dashboard
+   - Set fitness level, sports interests, goals
+   - This improves recommendations
+
+3. Get Recommendations
+   - Click "Recommendations"
+   - View AI-powered suggestions
+   - See match scores and explanations
+   - Click "Enroll Now"
+
+4. Chat with AI Coach
+   - Go to "AI Coach"
+   - Ask for training advice
+   - Get personalized responses
+
+5. View Events
+   - See all available sports events
+   - Browse basketball, yoga, running, etc.
+   - Filter by type or location
+
+
+STOPPING THE APP
+═══════════════════════════════════════════════════════════════════════════════
+
+Press Ctrl+C in PowerShell to stop the server
+
+
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+Q: "npm is not recognized"
+A: Node.js not installed. Download from https://nodejs.org/
+
+Q: "port 5000 already in use"
+A: Another app is using port 5000. Stop it or use: $env:PORT=3000 before npm run dev
+
+Q: "script execution disabled"
+A: Run: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Q: "Module not found"
+A: Run: npm install
+
+
+═══════════════════════════════════════════════════════════════════════════════
+Ready? Open PowerShell in your project folder and run: .\run-app.ps1
+═══════════════════════════════════════════════════════════════════════════════
