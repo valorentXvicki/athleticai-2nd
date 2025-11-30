@@ -1,0 +1,365 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ATHLETIC SPIRIT DARK THEME - Neon green and electric blue on dark background */
+:root {
+  --button-outline: rgba(0,255,157, .15);
+  --badge-outline: rgba(0,229,255, .15);
+  --opaque-button-border-intensity: 8;
+  --elevate-1: rgba(0,255,157, .06);
+  --elevate-2: rgba(0,255,157, .12);
+  --background: 195 50% 7%;
+  --foreground: 195 20% 98%;
+  --border: 195 30% 18%;
+  --card: 195 45% 10%;
+  --card-foreground: 195 20% 98%;
+  --card-border: 195 35% 15%;
+  --sidebar: 195 50% 8%;
+  --sidebar-foreground: 195 20% 98%;
+  --sidebar-border: 195 30% 16%;
+  --sidebar-primary: 158 100% 45%;
+  --sidebar-primary-foreground: 195 50% 5%;
+  --sidebar-accent: 195 35% 14%;
+  --sidebar-accent-foreground: 195 20% 98%;
+  --sidebar-ring: 158 100% 50%;
+  --popover: 195 45% 12%;
+  --popover-foreground: 195 20% 98%;
+  --popover-border: 195 30% 18%;
+  --primary: 158 100% 45%;
+  --primary-foreground: 195 50% 5%;
+  --secondary: 195 35% 16%;
+  --secondary-foreground: 195 20% 98%;
+  --muted: 195 30% 14%;
+  --muted-foreground: 195 20% 70%;
+  --accent: 186 100% 45%;
+  --accent-foreground: 195 50% 5%;
+  --destructive: 0 85% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 195 30% 25%;
+  --ring: 158 100% 50%;
+  --chart-1: 158 100% 50%;
+  --chart-2: 186 100% 50%;
+  --chart-3: 200 90% 55%;
+  --chart-4: 220 85% 60%;
+  --chart-5: 240 80% 65%;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --font-heading: 'Teko', sans-serif;
+  --radius: .5rem;
+  --shadow-2xs: 0px 2px 4px 0px hsl(195 50% 5% / 0.3);
+  --shadow-xs: 0px 2px 6px 0px hsl(195 50% 5% / 0.4);
+  --shadow-sm: 0px 2px 8px 0px hsl(195 50% 5% / 0.5), 0px 1px 3px -1px hsl(195 50% 5% / 0.3);
+  --shadow: 0px 4px 12px 0px hsl(195 50% 5% / 0.5), 0px 2px 4px -1px hsl(195 50% 5% / 0.3);
+  --shadow-md: 0px 6px 16px 0px hsl(195 50% 5% / 0.5), 0px 3px 6px -1px hsl(195 50% 5% / 0.3);
+  --shadow-lg: 0px 10px 24px 0px hsl(195 50% 5% / 0.5), 0px 5px 10px -1px hsl(195 50% 5% / 0.3);
+  --shadow-xl: 0px 16px 32px 0px hsl(195 50% 5% / 0.5), 0px 8px 16px -1px hsl(195 50% 5% / 0.3);
+  --shadow-2xl: 0px 24px 48px 0px hsl(195 50% 5% / 0.5);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+
+  /* Neon glow effects */
+  --glow-primary: 0 0 20px hsl(158 100% 45% / 0.4), 0 0 40px hsl(158 100% 45% / 0.2);
+  --glow-accent: 0 0 20px hsl(186 100% 45% / 0.4), 0 0 40px hsl(186 100% 45% / 0.2);
+  --glass: blur(12px) saturate(150%);
+
+  /* Fallback for older browsers */
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --primary-border: hsl(var(--primary));
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --secondary-border: hsl(var(--secondary));
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --muted-border: hsl(var(--muted));
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --accent-border: hsl(var(--accent));
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --destructive-border: hsl(var(--destructive));
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
+/* Keep dark theme only for athletic spirit */
+.dark {
+  --button-outline: rgba(0,255,157, .15);
+  --badge-outline: rgba(0,229,255, .15);
+  --opaque-button-border-intensity: 8;
+  --elevate-1: rgba(0,255,157, .06);
+  --elevate-2: rgba(0,255,157, .12);
+  --background: 195 50% 7%;
+  --foreground: 195 20% 98%;
+  --border: 195 30% 18%;
+  --card: 195 45% 10%;
+  --card-foreground: 195 20% 98%;
+  --card-border: 195 35% 15%;
+  --sidebar: 195 50% 8%;
+  --sidebar-foreground: 195 20% 98%;
+  --sidebar-border: 195 30% 16%;
+  --sidebar-primary: 158 100% 45%;
+  --sidebar-primary-foreground: 195 50% 5%;
+  --sidebar-accent: 195 35% 14%;
+  --sidebar-accent-foreground: 195 20% 98%;
+  --sidebar-ring: 158 100% 50%;
+  --popover: 195 45% 12%;
+  --popover-foreground: 195 20% 98%;
+  --popover-border: 195 30% 18%;
+  --primary: 158 100% 45%;
+  --primary-foreground: 195 50% 5%;
+  --secondary: 195 35% 16%;
+  --secondary-foreground: 195 20% 98%;
+  --muted: 195 30% 14%;
+  --muted-foreground: 195 20% 70%;
+  --accent: 186 100% 45%;
+  --accent-foreground: 195 50% 5%;
+  --destructive: 0 85% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 195 30% 25%;
+  --ring: 158 100% 50%;
+  --chart-1: 158 100% 50%;
+  --chart-2: 186 100% 50%;
+  --chart-3: 200 90% 55%;
+  --chart-4: 220 85% 60%;
+  --chart-5: 240 80% 65%;
+  --shadow-2xs: 0px 2px 4px 0px hsl(195 50% 5% / 0.3);
+  --shadow-xs: 0px 2px 6px 0px hsl(195 50% 5% / 0.4);
+  --shadow-sm: 0px 2px 8px 0px hsl(195 50% 5% / 0.5), 0px 1px 3px -1px hsl(195 50% 5% / 0.3);
+  --shadow: 0px 4px 12px 0px hsl(195 50% 5% / 0.5), 0px 2px 4px -1px hsl(195 50% 5% / 0.3);
+  --shadow-md: 0px 6px 16px 0px hsl(195 50% 5% / 0.5), 0px 3px 6px -1px hsl(195 50% 5% / 0.3);
+  --shadow-lg: 0px 10px 24px 0px hsl(195 50% 5% / 0.5), 0px 5px 10px -1px hsl(195 50% 5% / 0.3);
+  --shadow-xl: 0px 16px 32px 0px hsl(195 50% 5% / 0.5), 0px 8px 16px -1px hsl(195 50% 5% / 0.3);
+  --shadow-2xl: 0px 24px 48px 0px hsl(195 50% 5% / 0.5);
+
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --primary-border: hsl(var(--primary));
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --secondary-border: hsl(var(--secondary));
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --muted-border: hsl(var(--muted));
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --accent-border: hsl(var(--accent));
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --destructive-border: hsl(var(--destructive));
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+}
+
+@layer utilities {
+  /* Hide ugly search cancel button in Chrome until we can style it properly */
+  input[type="search"]::-webkit-search-cancel-button {
+    @apply hidden;
+  }
+
+  /* Placeholder styling for contentEditable div */
+  [contenteditable][data-placeholder]:empty::before {
+    content: attr(data-placeholder);
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+  }
+
+  .no-default-hover-elevate {}
+  .no-default-active-elevate {}
+
+  .toggle-elevate::before,
+  .toggle-elevate-2::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  .toggle-elevate.toggle-elevated::before {
+    background-color: var(--elevate-2);
+  }
+
+  .border.toggle-elevate::before {
+    inset: -1px;
+  }
+
+  .hover-elevate:not(.no-default-hover-elevate),
+  .active-elevate:not(.no-default-active-elevate),
+  .hover-elevate-2:not(.no-default-hover-elevate),
+  .active-elevate-2:not(.no-default-active-elevate) {
+    position: relative;
+    z-index: 0;
+  }
+
+  .hover-elevate:not(.no-default-hover-elevate)::after,
+  .active-elevate:not(.no-default-active-elevate)::after,
+  .hover-elevate-2:not(.no-default-hover-elevate)::after,
+  .active-elevate-2:not(.no-default-active-elevate)::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    z-index: 999;
+  }
+
+  .hover-elevate:hover:not(.no-default-hover-elevate)::after,
+  .active-elevate:active:not(.no-default-active-elevate)::after {
+    background-color: var(--elevate-1);
+  }
+
+  .hover-elevate-2:hover:not(.no-default-hover-elevate)::after,
+  .active-elevate-2:active:not(.no-default-active-elevate)::after {
+    background-color: var(--elevate-2);
+  }
+
+  .border.hover-elevate:not(.no-hover-interaction-elevate)::after,
+  .border.active-elevate:not(.no-active-interaction-elevate)::after,
+  .border.hover-elevate-2:not(.no-hover-interaction-elevate)::after,
+  .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
+  .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
+    inset: -1px;
+  }
+
+  /* Glassmorphism utility */
+  .glass {
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+  }
+
+  /* Neon glow utilities */
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(158 100% 45% / 0.3), 0 0 40px hsl(158 100% 45% / 0.15);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px hsl(186 100% 45% / 0.3), 0 0 40px hsl(186 100% 45% / 0.15);
+  }
+
+  /* Text glow */
+  .text-glow-primary {
+    text-shadow: 0 0 20px hsl(158 100% 45% / 0.5);
+  }
+
+  .text-glow-accent {
+    text-shadow: 0 0 20px hsl(186 100% 45% / 0.5);
+  }
+
+  /* Athletic Spirit specific animations */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(158 100% 45% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 30px hsl(158 100% 45% / 0.5);
+    }
+  }
+
+  @keyframes typing-bounce {
+    0%, 80%, 100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-typing-1 {
+    animation: typing-bounce 1.4s ease-in-out infinite;
+    animation-delay: 0s;
+  }
+
+  .animate-typing-2 {
+    animation: typing-bounce 1.4s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+
+  .animate-typing-3 {
+    animation: typing-bounce 1.4s ease-in-out infinite;
+    animation-delay: 0.4s;
+  }
+
+  /* Heading font utility */
+  .font-heading {
+    font-family: 'Teko', sans-serif;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(158 100% 50%) 0%, hsl(186 100% 50%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gradient background */
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(158 100% 45%) 0%, hsl(186 100% 45%) 100%);
+  }
+
+  /* Radial gradient backgrounds */
+  .bg-radial-primary {
+    background: radial-gradient(ellipse at 80% 20%, hsl(186 100% 45% / 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 80%, hsl(158 100% 45% / 0.15) 0%, transparent 50%);
+  }
+}
